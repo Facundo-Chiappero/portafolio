@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.project {
+    @apply w-[450px];
+}
+
+.project-img {
+    @apply h-[225px] transition-transform duration-500 rounded-t-xl;
+    aspect-ratio: 2 / 1;
+}
+
+.project-img:hover {
+    @apply transform scale-110;
+}
+
+.project-tech-container {
+    @apply flex justify-around text-center;
+}
+
+.project-tech {
+    @apply flex flex-row justify-center items-center w-[50%] dark:text-black text-white;
+}
+
+.project-tech img {
+    @apply w-[40px] h-[40px];
+}
+
+.project-info {
+    @apply flex flex-col gap-2 p-4 bg-white dark:bg-gray-800 rounded-b-xl shadow-lg transition-all duration-300 ease-in-out;
+
+}
+
+.link-container {
+    @apply flex justify-around;
+}
+
+.project-github, .project-link {
+    @apply bg-gray-200 text-black py-2 px-4 rounded-lg dark:bg-gray-900 dark:text-white;
+}
+
+ .modal {
+    @apply bg-[rgb(0,0,0,.8)];
+} 
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}

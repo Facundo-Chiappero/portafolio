@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src\output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white font-roboto">
+    <header class="header px-0 text-center text-4xl p-4 sticky top-0 bg-gray-100 z-10 dark:bg-gray-800">
+        <h1 class="mb-6">Facundo Chiappero</h1>
+        <nav class="text-xl">
+            <ul class="flex justify-around">
+                <li><a href="#about-me" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Sobre mí</a></li>
+                <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Proyectos</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="px-10">
+    <section class="about-me flex flex-wrap sm:flex-nowrap justify-around mt-10 gap-10">
+        <div class="w-[35%] flex justify-center flex-col mx-10">
+            <h2 class="mb-4" id="about-me">Sobre mí</h2>
+            <button class="bg-blue-500 hover:bg-blue-700 transition-colors duration-300 px-4 py-2 rounded-xl">
+                <a class="w-full h-full block text-white dark:text-black" href="src/CV_Facundo_Chiappero.pdf" target="_blank" download>Descargar mi Curriculum</a>
+            </button>
+        </div>
+        <p class="w-[65%] m-auto">
+            Hola, soy Facundo Chiappero, apasionado desarrollador web Fullstack.
+            <br>
+            Me gusta descubrir nuevas tecnologías y seguir aprendiendo continuamente.
+            <br>
+            Busco un empleo estable para seguir creciendo profesionalmente y vivir de mi pasión.
+        </p>
+    </section>
+    
+    <h2 class="mt-10 ml-10 mb-6">Mis Proyectos</h2>
+    <section id="projects" class="projectsContainer flex justify-around flex-wrap gap-8 gap-y-10 mb-10 mx-10">
+        <div class="project" id="project1">
+            <img src="src/assets/luc-a.png" alt="luc-a asistente virtual" class="project-img">
+            <div class="project-info">
+                <h3 class="project-title">luc-a</h3>
+                <p class="project-description">asistente medico virtual con inteligencia artificial</p>
+                <div class="project-tech-container">
+                    <p class="project-tech bg-blue-800 rounded-l-md">
+                        <img src="./src/assets/React.webp" alt=""> React
+                    </p>
+                    <p class="project-tech bg-yellow-500 rounded-r-md">
+                        <img src="src/assets/ia.png" alt=""> Inteligencia Artificial
+                    </p>
+                </div>
+                <div class="link-container">
+                    <a class="project-link cursor-pointer">No Hay Vista Para Este Proyecto</a>
+                    <a href="https://github.com/Facundo-Chiappero/luc-a" target="_blank" class="project-github">Ver en GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project" id="project2">
+            <img src="src/assets/galeriaGatos.png" alt="galeria de gatos" class="project-img">
+            <div class="project-info">
+                <h3 class="project-title">Galeria de Gatos</h3>
+                <p class="project-description">Galeria de gatos hecha en base a imagenes aleatorias obtenidas a traves de una api</p>
+                <div class="project-tech-container">
+                    <p class="project-tech bg-blue-800 rounded-l-md">
+                        <img src="./src/assets/React.webp" alt=""> React
+                    </p>
+                    <p class="project-tech bg-yellow-500 rounded-r-md">
+                        <img src="src/assets/api.png" alt=""> API
+                    </p>
+                </div>
+                <div class="link-container">
+                    <a href="https://galeria-gatos.netlify.app/" target="_blank" class="project-link">Ver Proyecto</a>
+                    <a href="https://github.com/Facundo-Chiappero/galeria-de-gatos" target="_blank" class="project-github">Ver en GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project" id="project3">
+            <img src="src/assets/taskFlow.png" alt="gestor de tareas" class="project-img">
+            <div class="project-info">
+                <h3 class="project-title">Task Flow</h3>
+                <p class="project-description">Gestor de tareas con persistencia de datos</p>
+                <div class="project-tech-container flex-wrap w-[100%]">
+                    <p class="project-tech bg-blue-800 w-[33%] rounded-l-md">
+                        <img src="./src/assets/React.webp" alt=""> React
+                    </p>
+                    <p class="project-tech bg-green-500 w-[33%] rounded-r-md">
+                        <img src="./src/assets/arrastrar-y-soltar.png" alt=""> Drag And Drop
+                    </p>
+                    <p class="project-tech bg-yellow-500 w-[33%] rounded-b-md">
+                        <img src="./src/assets/bbdd.png" alt=""> LocalStorage
+                    </p>
+                </div>
+                <div class="link-container">
+                    <a href="https://taskflowfree.netlify.app/" target="_blank" class="project-link">Ver Proyecto</a>
+                    <a href="https://github.com/Facundo-Chiappero/TaskFlow" target="_blank" class="project-github">Ver en GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project" id="project4">
+            <img src="src/assets/urlShort.png" alt="acortador de url" class="project-img">
+            <div class="project-info">
+                <h3 class="project-title">Acortador de Url</h3>
+                <p class="project-description">Acortador de Url simple y funcional</p>
+                <div class="project-tech-container flex-wrap">
+                    <p class="project-tech bg-red-500 w-[33%] rounded-l-md">
+                        <img src="src/assets/html.png" alt=""> HTML
+                    </p>
+                    <p class="project-tech bg-blue-500 w-[33%] rounded-r-md">
+                        <img src="src/assets/css.png" alt=""> CSS
+                    </p>
+                    <p class="project-tech bg-yellow-500 w-[33%] rounded-b-md">
+                        <img src="src/assets/js.png" alt=""> JS
+                    </p>
+                </div>
+                <div class="link-container">
+                    <a href="https://facundo-chiappero.github.io/acortador-de-url/" target="_blank" class="project-link">Ver Proyecto</a>
+                    <a href="https://github.com/Facundo-Chiappero/acortador-de-url" target="_blank" class="project-github">Ver en GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal hidden fixed inset-0 bg-black flex justify-center items-center z-1000">
+        <img src="" alt="" class="modal-img max-w-[90%] max-h-[90%]">
+    </div>
+</main>
+    
+    <footer class="bg-gray-100 text-black dark:text-white py-8 dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <div class="text-center sm:text-left">
+                    <h3 class="text-2xl font-semibold mb-2" id="contact">Contacto</h3>
+                    <p class="text-lg">¡No dudes en ponerte en contacto conmigo!</p>
+                    <p class="text-sm mt-4">
+                        Correo: <a href="mailto:tu-facundochiappero5@gmail.com" class="text-blue-400 hover:text-blue-600">facundochiappero5@gmail.com</a>
+                    </p>
+                </div>
+                <div class="mt-6 sm:mt-0">
+                    <h3 class="text-2xl font-semibold mb-2 text-center sm:text-left">Redes Sociales</h3>
+                    <div class="flex justify-center sm:justify-start space-x-6">
+                        <a href="https://www.linkedin.com/in/facundo-andrés-chiappero" target="_blank" class="text-gray-600 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+                            <i class="fab fa-linkedin-in text-3xl"></i>
+                        </a>
+                        <a href="https://github.com/Facundo-Chiappero" target="_blank" class="text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-gray-500 transition-colors duration-200">
+                            <i class="fab fa-github text-3xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/patito.kun.uwu/" target="_blank" class="text-gray-600 dark:text-white hover:text-pink-500 dark:hover:text-pink-300 transition-colors duration-200">
+                            <i class="fab fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
